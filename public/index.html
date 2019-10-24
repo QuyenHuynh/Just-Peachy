@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--font awesome-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!--bulma css framework-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <!--alertify-->
+    <link rel="stylesheet" href="css/alertify.css">
+    <!--google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Paytone+One&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="images/peach2.png">
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>Just Peachy</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!--Logo-->
+            <h1 class='logo'>Just Peachy </h1> <img id="logo-img" src="images/peach2.png">
+
+            <div id="activity-wrap">
+                <!--Activity Information-->
+                <div id="activity_title"></div>
+                <div id="activity_id"></div>
+                <br>
+                <div id="activity_address"></div>
+                <div id="activity_link"></div>
+                <br>
+                <div id="activity_description"></div>
+                <br>
+
+                <!--Google Map-->
+                <div id="map"></div>
+                <br>
+
+                <!--Weather Information-->
+                <div class="row">
+                    <div class="col-md-5" id="gradient">
+                        <div id="weather">
+                            <div class="city"></div>
+                            <div class="temp"></div>
+                            <div class="humidity"></div>
+                            <div class="wind"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <!--Next Button-->
+                <button id="next-btn"><i class="fa fa-arrow-circle-right"></i> Next</button>
+
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+
+        <!--FOOTER-->
+        <footer id='footer'>
+            <div class="row">
+                <!--column 1-->
+                <div class="column" style="background-color:rgb(233, 153, 122)">
+                    <h2>About</h2>
+                    <p>Just Peachy is Georgia's online tour guide! Here, you will find the best hangout spots and
+                        attractions,
+                        curated by local Georgians themselves.</p>
+                </div>
+                <!--column 2-->
+                <div class="column" style="background-color:rgb(233, 153, 122)">
+                    <h2>Contact</h2>
+                    <p id="contact-info">
+                        <i class="fa fa-map-marker"></i> 147 Technology Pkwy #100, Peachtree Corners, GA 30092 <br>
+                        <i class="fa fa-phone"></i> +1 678 1234 <br>
+                        <i class="fa fa-envelope"></i> <a href="mailto:contact@justpeachy.com">
+                            contact@justpeachy.com</a>
+                    </p>
+                </div>
+                <!--column 3-->
+                <div class="column" style="background-color:rgb(233, 153, 122)">
+                    <h2>Social Media</h2>
+                    <p id="social-media">
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i> Instagram</a>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i> Facebook</a>
+                        <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i> Twitter</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+<!--bulma js-->
+<script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+<!--google maps-->
+<script type="text/javascript" async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQjmexIk0ui-r2JNDxbLeFyLTTABPzoio&callback=myMap"></script>
+<!--alertify-->
+<script src="js/alertify.min.js"></script>
+<!--jquery import-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--custom javascript-->
+<script src="js/logic.js"></script>
+
+</html>
